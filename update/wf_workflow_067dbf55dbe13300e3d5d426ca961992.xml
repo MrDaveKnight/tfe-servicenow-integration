@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"ends":["c7a457a6db213300e3d5d426ca96190c"],"stages":{},"subflows":[]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description/>
+        <expected_sequences>8ba457a6db213300e3d5d426ca96190d,03a4dba6db213300e3d5d426ca9619dc,c7a457a6db213300e3d5d426ca96190c</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>8ba457a6db213300e3d5d426ca96190d,03a4dba6db213300e3d5d426ca9619dc,c7a457a6db213300e3d5d426ca96190c</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Create Workspace With Variables</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">8ba457a6db213300e3d5d426ca96190d</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:28</sys_created_on>
+        <sys_id>8ba457a6db213300e3d5d426ca961909</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 19:56:49</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Create Workspace With Variables">067dbf55dbe13300e3d5d426ca961992</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Create Workspace With Variables</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-20 20:01:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>067dbf55dbe13300e3d5d426ca961992</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Create Workspace With Variables</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Terraform Enterprise" source="x_325709_terraform">a3f7fe62dbe033009ba2f8fdbf96192a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Terraform Enterprise">a3f7fe62dbe033009ba2f8fdbf96192a</sys_scope>
+        <sys_update_name>wf_workflow_067dbf55dbe13300e3d5d426ca961992</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-20 20:01:52</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>c3a457a6db213300e3d5d426ca96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="Create Workspace With Variables">8ba457a6db213300e3d5d426ca961909</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Delivery</name>
+        <ola>1970-01-03 00:00:00</ola>
+        <order>140</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>8ba457a6db213300e3d5d426ca96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+        <value>delivery</value>
+        <workflow_version display_value="Create Workspace With Variables">8ba457a6db213300e3d5d426ca961909</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Fulfillment</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>120</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>0fa457a6db213300e3d5d426ca96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+        <value>fulfillment</value>
+        <workflow_version display_value="Create Workspace With Variables">8ba457a6db213300e3d5d426ca961909</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>87a457a6db213300e3d5d426ca96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="Create Workspace With Variables">8ba457a6db213300e3d5d426ca961909</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>0ba457a6db213300e3d5d426ca96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+        <value>request_approved</value>
+        <workflow_version display_value="Create Workspace With Variables">8ba457a6db213300e3d5d426ca961909</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>8fa457a6db213300e3d5d426ca96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="Create Workspace With Variables">8ba457a6db213300e3d5d426ca961909</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>8ba457a6db213300e3d5d426ca96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Create Workspace With Variables">8ba457a6db213300e3d5d426ca961909</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=8ba457a6db213300e3d5d426ca96190d"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">8ba457a6db213300e3d5d426ca96190d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>4ba4dba6db213300e3d5d426ca9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create with  Variables</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>03a4dba6db213300e3d5d426ca9619dc</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:40:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Create Workspace With Variables">8ba457a6db213300e3d5d426ca961909</workflow_version>
+        <x>111</x>
+        <y>171</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=03a4dba6db213300e3d5d426ca9619dc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>03a4dba6db213300e3d5d426ca9619dc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>0ba4dba6db213300e3d5d426ca9619dc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:40:37</sys_updated_on>
+        <value>gs.info("Workflow: Terraform Provision Workspace with Variables Started...");&#13;
+&#13;
+// ** Set to the Variable Set for this Catalog Item **&#13;
+// ** Any variables in the set must start with `tf_`&#13;
+VAR_SET_NAME = "var_create_workspace";&#13;
+tf_variables = current.variables[VAR_SET_NAME];&#13;
+&#13;
+// Create Workspace&#13;
+var conf          = new tfe_config();&#13;
+var requestID     = current.request.getDisplayValue(); // Catalog Request ID&#13;
+var workspaceVCS  = current.variables.tf_var_vcs_repository;  // Variable from Catalog Request&#13;
+var workspaceName = createWorkspaceName(requestID);&#13;
+var workspaceURL  = createWorkspaceURL(conf, workspaceName);&#13;
+&#13;
+var vcsRecord               = getVCSRecord(workspaceVCS);&#13;
+var createWorkspaceContent  = createWorkspaceRequestContent(vcsRecord, workspaceName);&#13;
+var workspaceRequestContent = JSON.stringify(createWorkspaceContent);&#13;
+var workspaceID             = createWorkspace(conf, workspaceRequestContent);&#13;
+&#13;
+// Create any TF Variables from the Variable Set.&#13;
+// ** tf_var_ will be removed from variable name **&#13;
+Object.keys(tf_variables).forEach(function(key) {&#13;
+  var _key = String(key);&#13;
+&#13;
+  if (_key.startsWith("tf_var_")) {&#13;
+    var _key_without_tf   = _key.replace("tf_var_","");&#13;
+    var createVarContent  = createVariableRequestContent(workspaceID, _key_without_tf, String(tf_variables[key]));&#13;
+    var varRequestContent = JSON.stringify(createVarContent);&#13;
+    createVariables(conf, varRequestContent);&#13;
+  }&#13;
+});&#13;
+&#13;
+// ** Functions **&#13;
+/*&#13;
+* @param {Object} conf - Object of configuration variables for Terraform&#13;
+* @param {Object} reqContent - Stringified JSON for request content&#13;
+* @return {String} Workspace ID&#13;
+*/&#13;
+function createWorkspace(conf, reqContent) {&#13;
+  var workspace_id = "";&#13;
+&#13;
+  var requestBody;&#13;
+  var responseBody;&#13;
+  var status;&#13;
+  // Might throw exception if message doesn't exist or not visible due to scope.&#13;
+  var sm = new sn_ws.RESTMessageV2("TFE Workspaces", "Create Workspace");&#13;
+&#13;
+  // Set Request variables&#13;
+  // sm.setEndpoint(conf.hostname);&#13;
+  sm.setHttpTimeout(10000); // Wait at most 10 seconds for response from http request.&#13;
+  sm.setStringParameter("hostname", conf.hostname);&#13;
+  sm.setStringParameter("org_name", conf.org_name);&#13;
+  sm.setStringParameter("api_team_token", conf.api_team_token);&#13;
+  sm.setRequestBody(reqContent);&#13;
+&#13;
+  // ** Execute request **&#13;
+  try{&#13;
+    // Might throw exception if http connection timed out or auth error&#13;
+    var response = sm.execute();&#13;
+&#13;
+    responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();&#13;
+    status       = response.getStatusCode();&#13;
+  } catch(ex) {&#13;
+    // On HTTP Request error&#13;
+    responseBody = ex.getMessage();&#13;
+    requestBody  = sm ? sm.getRequestBody() : null;&#13;
+    status       = response ? response.getStatusCode() : "500";&#13;
+&#13;
+    // Log to System Logs&#13;
+    gs.error("Error making HTTP Request");&#13;
+    gs.error("HTTP Status: " + status);&#13;
+    gs.error("Request Body: " + requestBody);&#13;
+    gs.error("Response: " + responseBody);&#13;
+  } finally {&#13;
+    //  parse JSON string returned from request into a JSON object&#13;
+    var parsed = JSON.parse(responseBody);&#13;
+    createTerraformRecord(parsed, requestID, workspaceURL);&#13;
+&#13;
+    workspace_id = parsed.data.id;&#13;
+  }&#13;
+&#13;
+  return workspace_id;&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {String} workspace_id - ID for the workspace to create variables on&#13;
+* @param {Object} variable - Variable to create {"key": "someKey", "value": "someValue"}&#13;
+*/&#13;
+function createVariables(conf, reqContent) {&#13;
+  var requestBody;&#13;
+  var responseBody;&#13;
+  var status;&#13;
+  // Might throw exception if message doesn't exist or not visible due to scope.&#13;
+  var sm = new sn_ws.RESTMessageV2("TF Variables", "Create Variable");&#13;
+&#13;
+  // Set Request variables&#13;
+  // sm.setEndpoint(conf.hostname);&#13;
+  sm.setHttpTimeout(10000); // Wait at most 10 seconds for response from http request.&#13;
+  sm.setStringParameter("hostname", conf.hostname);&#13;
+  sm.setStringParameter("org_name", conf.org_name);&#13;
+  sm.setStringParameter("api_team_token", conf.api_team_token);&#13;
+  sm.setRequestBody(reqContent);&#13;
+&#13;
+  // ** Execute request **&#13;
+  try{&#13;
+    // Might throw exception if http connection timed out or auth error&#13;
+    var response = sm.execute();&#13;
+&#13;
+    responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();&#13;
+    status       = response.getStatusCode();&#13;
+  } catch(ex) {&#13;
+    // On HTTP Request error&#13;
+    responseBody = ex.getMessage();&#13;
+    requestBody  = sm ? sm.getRequestBody() : null;&#13;
+    status       = response ? response.getStatusCode() : "500";&#13;
+&#13;
+    // Log to System Logs&#13;
+    gs.error("Error making HTTP Request");&#13;
+    gs.error("HTTP Status: " + status);&#13;
+    gs.error("Request Body: " + requestBody);&#13;
+    gs.error("Response: " + responseBody);&#13;
+  } finally {&#13;
+&#13;
+  }&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {Object} obj - Object of parsed response&#13;
+* @param {String} request_id - Catalog Request Number/ID&#13;
+*/&#13;
+function createTerraformRecord(obj, request_id, workspace_url) {&#13;
+  var grTerraform = new GlideRecord("x_325709_terraform_terraform");&#13;
+  grTerraform.initialize();&#13;
+  grTerraform.request_id        = request_id;&#13;
+  grTerraform.tfe_action_type   = "Create Workspace";&#13;
+  grTerraform.workspace_id      = obj.data.id;&#13;
+  grTerraform.tfe_workspace_url = workspace_url;&#13;
+  grTerraform.workspace_name    = obj.data.attributes.name;&#13;
+  grTerraform.last_known_state  = "null"; // default until run status is updated&#13;
+  grTerraform.insert();&#13;
+}&#13;
+&#13;
+/*&#13;
+* @return {String} Workspace Name&#13;
+*/&#13;
+function createWorkspaceURL(conf, workspaceName) {&#13;
+  var formatedURL = conf.hostname + "/app/" + conf.org_name + "/workspaces/" + workspaceName;&#13;
+&#13;
+  return formatedURL;&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {String} name&#13;
+* @return {String} Formatted name for the created workspace&#13;
+*/&#13;
+function createWorkspaceName(name) {&#13;
+  // Abstraction for a unique workspace name&#13;
+  return name;&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {String} workspaceVCS - Workspace VCS Name&#13;
+* @return {Object} GlideRecord for VCS&#13;
+*/&#13;
+function getVCSRecord(vcs_name) {&#13;
+  var record;&#13;
+  var grVCS = new GlideRecord("x_325709_terraform_vcs_repositories");&#13;
+  grVCS.addQuery("name", vcs_name);&#13;
+  grVCS.setLimit(1);&#13;
+  grVCS.query();&#13;
+  while (grVCS.next()) {&#13;
+    record = grVCS;&#13;
+  }&#13;
+&#13;
+  return record;&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {Object} vcsObject - VCS Glide Record&#13;
+* @param {String} workspaceName - Name of the workspace being created&#13;
+* @return {Object} Data object for create workspace request content&#13;
+*/&#13;
+function createWorkspaceRequestContent(vcsObject, workspaceName) {&#13;
+  var data = {&#13;
+    "data": {&#13;
+      "attributes": {&#13;
+        "name": String(workspaceName),&#13;
+        "queue-all-runs": "false",&#13;
+        "auto-apply": "false",&#13;
+        "terraform_version": String(vcsObject.terraform_version),&#13;
+        "ingress-submodules": "false",&#13;
+        "working-directory": "",&#13;
+        "vcs-repo": {&#13;
+          "identifier": String(vcsObject.identifier),&#13;
+          "oauth-token-id": String(vcsObject.oauth_token_id),&#13;
+          "branch": "",&#13;
+          "default-branch": "true"&#13;
+        }&#13;
+      },&#13;
+      "type": "workspaces"&#13;
+    }&#13;
+  };&#13;
+&#13;
+  return data;&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {String} workspace_id - Workspace ID&#13;
+* @param {String} key          - TF Var key/name&#13;
+* @param {String} value        - TF VAR value&#13;
+* @return {Object} Data object for create variable request content&#13;
+*/&#13;
+function createVariableRequestContent(workspace_id, key, value) {&#13;
+  var data = {&#13;
+    "data": {&#13;
+      "type": "vars",&#13;
+      "attributes": {&#13;
+        "key": key,&#13;
+        "value": value,&#13;
+        "category": "terraform",&#13;
+        "hcl": false,&#13;
+        "sensitive": false&#13;
+      },&#13;
+      "relationships": {&#13;
+        "workspace": {&#13;
+          "data": {&#13;
+            "id": String(workspace_id),&#13;
+            "type": "workspaces"&#13;
+          }&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  };&#13;
+&#13;
+  return data;&#13;
+}&#13;
+&#13;
+gs.info("Workflow: Terraform Create Workspace Finished.");&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>03a4dba6db213300e3d5d426ca9619dc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>0ba4dba6db213300e3d5d426ca9619dc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:40:37</sys_updated_on>
+        <value>gs.info("Workflow: Terraform Provision Workspace with Variables Started...");&#13;
+&#13;
+// ** Set to the Variable Set for this Catalog Item **&#13;
+// ** Any variables in the set must start with `tf_`&#13;
+VAR_SET_NAME = "var_create_workspace";&#13;
+tf_variables = current.variables[VAR_SET_NAME];&#13;
+&#13;
+// Create Workspace&#13;
+var conf          = new tfe_config();&#13;
+var requestID     = current.request.getDisplayValue(); // Catalog Request ID&#13;
+var workspaceVCS  = current.variables.tf_var_vcs_repository;  // Variable from Catalog Request&#13;
+var workspaceName = createWorkspaceName(requestID);&#13;
+var workspaceURL  = createWorkspaceURL(conf, workspaceName);&#13;
+&#13;
+var vcsRecord               = getVCSRecord(workspaceVCS);&#13;
+var createWorkspaceContent  = createWorkspaceRequestContent(vcsRecord, workspaceName);&#13;
+var workspaceRequestContent = JSON.stringify(createWorkspaceContent);&#13;
+var workspaceID             = createWorkspace(conf, workspaceRequestContent);&#13;
+&#13;
+// Create any TF Variables from the Variable Set.&#13;
+// ** tf_var_ will be removed from variable name **&#13;
+Object.keys(tf_variables).forEach(function(key) {&#13;
+  var _key = String(key);&#13;
+&#13;
+  if (_key.startsWith("tf_var_")) {&#13;
+    var _key_without_tf   = _key.replace("tf_var_","");&#13;
+    var createVarContent  = createVariableRequestContent(workspaceID, _key_without_tf, String(tf_variables[key]));&#13;
+    var varRequestContent = JSON.stringify(createVarContent);&#13;
+    createVariables(conf, varRequestContent);&#13;
+  }&#13;
+});&#13;
+&#13;
+// ** Functions **&#13;
+/*&#13;
+* @param {Object} conf - Object of configuration variables for Terraform&#13;
+* @param {Object} reqContent - Stringified JSON for request content&#13;
+* @return {String} Workspace ID&#13;
+*/&#13;
+function createWorkspace(conf, reqContent) {&#13;
+  var workspace_id = "";&#13;
+&#13;
+  var requestBody;&#13;
+  var responseBody;&#13;
+  var status;&#13;
+  // Might throw exception if message doesn't exist or not visible due to scope.&#13;
+  var sm = new sn_ws.RESTMessageV2("TFE Workspaces", "Create Workspace");&#13;
+&#13;
+  // Set Request variables&#13;
+  // sm.setEndpoint(conf.hostname);&#13;
+  sm.setHttpTimeout(10000); // Wait at most 10 seconds for response from http request.&#13;
+  sm.setStringParameter("hostname", conf.hostname);&#13;
+  sm.setStringParameter("org_name", conf.org_name);&#13;
+  sm.setStringParameter("api_team_token", conf.api_team_token);&#13;
+  sm.setRequestBody(reqContent);&#13;
+&#13;
+  // ** Execute request **&#13;
+  try{&#13;
+    // Might throw exception if http connection timed out or auth error&#13;
+    var response = sm.execute();&#13;
+&#13;
+    responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();&#13;
+    status       = response.getStatusCode();&#13;
+  } catch(ex) {&#13;
+    // On HTTP Request error&#13;
+    responseBody = ex.getMessage();&#13;
+    requestBody  = sm ? sm.getRequestBody() : null;&#13;
+    status       = response ? response.getStatusCode() : "500";&#13;
+&#13;
+    // Log to System Logs&#13;
+    gs.error("Error making HTTP Request");&#13;
+    gs.error("HTTP Status: " + status);&#13;
+    gs.error("Request Body: " + requestBody);&#13;
+    gs.error("Response: " + responseBody);&#13;
+  } finally {&#13;
+    //  parse JSON string returned from request into a JSON object&#13;
+    var parsed = JSON.parse(responseBody);&#13;
+    createTerraformRecord(parsed, requestID, workspaceURL);&#13;
+&#13;
+    workspace_id = parsed.data.id;&#13;
+  }&#13;
+&#13;
+  return workspace_id;&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {String} workspace_id - ID for the workspace to create variables on&#13;
+* @param {Object} variable - Variable to create {"key": "someKey", "value": "someValue"}&#13;
+*/&#13;
+function createVariables(conf, reqContent) {&#13;
+  var requestBody;&#13;
+  var responseBody;&#13;
+  var status;&#13;
+  // Might throw exception if message doesn't exist or not visible due to scope.&#13;
+  var sm = new sn_ws.RESTMessageV2("TF Variables", "Create Variable");&#13;
+&#13;
+  // Set Request variables&#13;
+  // sm.setEndpoint(conf.hostname);&#13;
+  sm.setHttpTimeout(10000); // Wait at most 10 seconds for response from http request.&#13;
+  sm.setStringParameter("hostname", conf.hostname);&#13;
+  sm.setStringParameter("org_name", conf.org_name);&#13;
+  sm.setStringParameter("api_team_token", conf.api_team_token);&#13;
+  sm.setRequestBody(reqContent);&#13;
+&#13;
+  // ** Execute request **&#13;
+  try{&#13;
+    // Might throw exception if http connection timed out or auth error&#13;
+    var response = sm.execute();&#13;
+&#13;
+    responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();&#13;
+    status       = response.getStatusCode();&#13;
+  } catch(ex) {&#13;
+    // On HTTP Request error&#13;
+    responseBody = ex.getMessage();&#13;
+    requestBody  = sm ? sm.getRequestBody() : null;&#13;
+    status       = response ? response.getStatusCode() : "500";&#13;
+&#13;
+    // Log to System Logs&#13;
+    gs.error("Error making HTTP Request");&#13;
+    gs.error("HTTP Status: " + status);&#13;
+    gs.error("Request Body: " + requestBody);&#13;
+    gs.error("Response: " + responseBody);&#13;
+  } finally {&#13;
+&#13;
+  }&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {Object} obj - Object of parsed response&#13;
+* @param {String} request_id - Catalog Request Number/ID&#13;
+*/&#13;
+function createTerraformRecord(obj, request_id, workspace_url) {&#13;
+  var grTerraform = new GlideRecord("x_325709_terraform_terraform");&#13;
+  grTerraform.initialize();&#13;
+  grTerraform.request_id        = request_id;&#13;
+  grTerraform.tfe_action_type   = "Create Workspace";&#13;
+  grTerraform.workspace_id      = obj.data.id;&#13;
+  grTerraform.tfe_workspace_url = workspace_url;&#13;
+  grTerraform.workspace_name    = obj.data.attributes.name;&#13;
+  grTerraform.last_known_state  = "null"; // default until run status is updated&#13;
+  grTerraform.insert();&#13;
+}&#13;
+&#13;
+/*&#13;
+* @return {String} Workspace Name&#13;
+*/&#13;
+function createWorkspaceURL(conf, workspaceName) {&#13;
+  var formatedURL = conf.hostname + "/app/" + conf.org_name + "/workspaces/" + workspaceName;&#13;
+&#13;
+  return formatedURL;&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {String} name&#13;
+* @return {String} Formatted name for the created workspace&#13;
+*/&#13;
+function createWorkspaceName(name) {&#13;
+  // Abstraction for a unique workspace name&#13;
+  return name;&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {String} workspaceVCS - Workspace VCS Name&#13;
+* @return {Object} GlideRecord for VCS&#13;
+*/&#13;
+function getVCSRecord(vcs_name) {&#13;
+  var record;&#13;
+  var grVCS = new GlideRecord("x_325709_terraform_vcs_repositories");&#13;
+  grVCS.addQuery("name", vcs_name);&#13;
+  grVCS.setLimit(1);&#13;
+  grVCS.query();&#13;
+  while (grVCS.next()) {&#13;
+    record = grVCS;&#13;
+  }&#13;
+&#13;
+  return record;&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {Object} vcsObject - VCS Glide Record&#13;
+* @param {String} workspaceName - Name of the workspace being created&#13;
+* @return {Object} Data object for create workspace request content&#13;
+*/&#13;
+function createWorkspaceRequestContent(vcsObject, workspaceName) {&#13;
+  var data = {&#13;
+    "data": {&#13;
+      "attributes": {&#13;
+        "name": String(workspaceName),&#13;
+        "queue-all-runs": "false",&#13;
+        "auto-apply": "false",&#13;
+        "terraform_version": String(vcsObject.terraform_version),&#13;
+        "ingress-submodules": "false",&#13;
+        "working-directory": "",&#13;
+        "vcs-repo": {&#13;
+          "identifier": String(vcsObject.identifier),&#13;
+          "oauth-token-id": String(vcsObject.oauth_token_id),&#13;
+          "branch": "",&#13;
+          "default-branch": "true"&#13;
+        }&#13;
+      },&#13;
+      "type": "workspaces"&#13;
+    }&#13;
+  };&#13;
+&#13;
+  return data;&#13;
+}&#13;
+&#13;
+/*&#13;
+* @param {String} workspace_id - Workspace ID&#13;
+* @param {String} key          - TF Var key/name&#13;
+* @param {String} value        - TF VAR value&#13;
+* @return {Object} Data object for create variable request content&#13;
+*/&#13;
+function createVariableRequestContent(workspace_id, key, value) {&#13;
+  var data = {&#13;
+    "data": {&#13;
+      "type": "vars",&#13;
+      "attributes": {&#13;
+        "key": key,&#13;
+        "value": value,&#13;
+        "category": "terraform",&#13;
+        "hcl": false,&#13;
+        "sensitive": false&#13;
+      },&#13;
+      "relationships": {&#13;
+        "workspace": {&#13;
+          "data": {&#13;
+            "id": String(workspace_id),&#13;
+            "type": "workspaces"&#13;
+          }&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  };&#13;
+&#13;
+  return data;&#13;
+}&#13;
+&#13;
+gs.info("Workflow: Terraform Create Workspace Finished.");&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create with  Variables">03a4dba6db213300e3d5d426ca9619dc</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>47a4dba6db213300e3d5d426ca9619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>c7a457a6db213300e3d5d426ca96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Create Workspace With Variables">8ba457a6db213300e3d5d426ca961909</workflow_version>
+        <x>282</x>
+        <y>310</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c7a457a6db213300e3d5d426ca96190c"/>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">47a4dba6db213300e3d5d426ca9619dd</condition>
+        <from display_value="Create with  Variables">03a4dba6db213300e3d5d426ca9619dc</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>83a4dba6db213300e3d5d426ca9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+        <to display_value="End">c7a457a6db213300e3d5d426ca96190c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">4ba4dba6db213300e3d5d426ca9619db</condition>
+        <from display_value="Begin">8ba457a6db213300e3d5d426ca96190d</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:29</sys_created_on>
+        <sys_id>87a4dba6db213300e3d5d426ca9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:29</sys_updated_on>
+        <to display_value="Create with  Variables">03a4dba6db213300e3d5d426ca9619dc</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-24 14:15:28</sys_created_on>
+        <sys_id>8fa457a6db213300e3d5d426ca961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-24 14:15:28</sys_updated_on>
+        <workflow_version display_value="Create Workspace With Variables">8ba457a6db213300e3d5d426ca961909</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=067dbf55dbe13300e3d5d426ca961992^sys_id!=8ba457a6db213300e3d5d426ca961909">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

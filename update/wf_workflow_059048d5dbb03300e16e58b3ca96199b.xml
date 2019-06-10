@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["b22f750ddb813300e16e58b3ca961952"],"stages":{},"activities":{},"subflows":[]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description/>
+        <expected_sequences>b22fbd4ddb813300e16e58b3ca96197f,722f750ddb813300e16e58b3ca961953,b22f750ddb813300e16e58b3ca961952</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>b22fbd4ddb813300e16e58b3ca96197f,722f750ddb813300e16e58b3ca961953,b22f750ddb813300e16e58b3ca961952</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Poll Run State</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">b22fbd4ddb813300e16e58b3ca96197f</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 19:39:37</sys_created_on>
+        <sys_id>f22f750ddb813300e16e58b3ca961950</sys_id>
+        <sys_mod_count>55</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 21:11:58</sys_updated_on>
+        <table>x_325709_terraform_terraform</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Poll Run State">059048d5dbb03300e16e58b3ca96199b</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Poll Run State</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-12 18:49:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>059048d5dbb03300e16e58b3ca96199b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Poll Run State</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Terraform Enterprise" source="x_325709_terraform">a3f7fe62dbe033009ba2f8fdbf96192a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Terraform Enterprise">a3f7fe62dbe033009ba2f8fdbf96192a</sys_scope>
+        <sys_update_name>wf_workflow_059048d5dbb03300e16e58b3ca96199b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-15 16:36:36</sys_updated_on>
+        <table>x_325709_terraform_terraform</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 19:39:37</sys_created_on>
+        <sys_id>b22fbd4ddb813300e16e58b3ca96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 19:39:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Poll Run State">f22f750ddb813300e16e58b3ca961950</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b22fbd4ddb813300e16e58b3ca96197f"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">b22fbd4ddb813300e16e58b3ca96197f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 19:39:38</sys_created_on>
+        <sys_id>7e2fbd4ddb813300e16e58b3ca96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 19:39:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 19:39:37</sys_created_on>
+        <sys_id>b22f750ddb813300e16e58b3ca961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 19:39:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Poll Run State">f22f750ddb813300e16e58b3ca961950</workflow_version>
+        <x>454</x>
+        <y>162</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b22f750ddb813300e16e58b3ca961952"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Poll Run State</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 19:39:37</sys_created_on>
+        <sys_id>722f750ddb813300e16e58b3ca961953</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 21:10:16</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Poll Run State">f22f750ddb813300e16e58b3ca961950</workflow_version>
+        <x>165</x>
+        <y>124</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=722f750ddb813300e16e58b3ca961953"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>722f750ddb813300e16e58b3ca961953</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 19:39:37</sys_created_on>
+        <sys_id>f62f750ddb813300e16e58b3ca961953</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 21:10:16</sys_updated_on>
+        <value>/*&#13;
+  Workspace Polling&#13;
+    Finds any records not in an applied state then&#13;
+    queries the Terraform Enterprise API for their status.&#13;
+*/&#13;
+&#13;
+// System Property variables for Terraform API&#13;
+var conf = new tfe_config();&#13;
+&#13;
+// Search Terraform Table for any records not in "applied" state&#13;
+var gr = new GlideRecord("x_325709_terraform_terraform");&#13;
+gr.addQuery("last_known_state", "!=", "applied");&#13;
+gr.query();&#13;
+&#13;
+// Loop through all records&#13;
+while (gr.next()) {&#13;
+	var runID;&#13;
+&#13;
+  // Fetch Workspace Current Run Info&#13;
+  var currentRun = getWorkspaceCurrentRun(gr.workspace_name);&#13;
+  if (currentRun !== null) {&#13;
+    runID = currentRun.id;&#13;
+  } else {&#13;
+    gr.last_known_state = String(currentRun);&#13;
+    gr.update();&#13;
+    continue; // move on to next record&#13;
+  }&#13;
+&#13;
+  // Fetch Run State Info and update record&#13;
+  var runState = getRunState(runID);&#13;
+  gr.last_known_state = runState.toLowerCase();&#13;
+  gr.update();&#13;
+&#13;
+} // end while loop&#13;
+&#13;
+&#13;
+// ** Functions **&#13;
+/*&#13;
+* @param {String} run_id - Run ID&#13;
+* @return {String} Current Run State String&#13;
+*/&#13;
+function getRunState(run_id) {&#13;
+	gs.info("Run id" + run_id);&#13;
+	var current_run_state;&#13;
+&#13;
+	var runResponse;&#13;
+	var runResponseBody;&#13;
+	var runHttpStatus;&#13;
+&#13;
+	getRun = new sn_ws.RESTMessageV2("TFE Runs", "Get Run");&#13;
+	getRun.setHttpTimeout(10000);&#13;
+	getRun.setStringParameter("hostname", conf.hostname);&#13;
+	getRun.setStringParameter("api_team_token", conf.api_team_token);&#13;
+	getRun.setStringParameter("run_id", run_id);&#13;
+&#13;
+	try {&#13;
+		runResponse     = getRun.execute();&#13;
+		runResponseBody = runResponse.haveError() ? runResponse.getErrorMessage() : runResponse.getBody();&#13;
+	} catch(ex) {&#13;
+		// On HTTP Request error&#13;
+		var errorMsg    = ex.getMessage();&#13;
+		runHttpStatus   = runResponse.getStatusCode();&#13;
+		var requestBody = getRun ? getRun.getRequestBody() : null;&#13;
+&#13;
+	  gs.info("Response: " + errorMsg);&#13;
+	  gs.info("HTTP Status: " + runHttpStatus);&#13;
+	} finally {&#13;
+	  var parsedRun     = JSON.parse(runResponseBody);&#13;
+    current_run_state = String(parsedRun["data"]["attributes"]["status"]);&#13;
+	}&#13;
+&#13;
+  return current_run_state;&#13;
+}&#13;
+&#13;
+&#13;
+/*&#13;
+* @param {String} workspace_name - Name of the workspace to query TFE API&#13;
+* @return {Object|null} Parsed object from JSON data or null&#13;
+*/&#13;
+function getWorkspaceCurrentRun(workspace_name) {&#13;
+	var currentRunData;&#13;
+&#13;
+	var workspaceResponse;&#13;
+	var workspaceResponseBody;&#13;
+	var responseStatus;&#13;
+&#13;
+  getWorkspace = new sn_ws.RESTMessageV2("TFE Workspaces", "Show Workspace");&#13;
+	getWorkspace.setHttpTimeout(10000);&#13;
+	getWorkspace.setStringParameter("hostname", conf.hostname);&#13;
+	getWorkspace.setStringParameter("api_team_token", conf.api_team_token);&#13;
+	getWorkspace.setStringParameter("org_name", conf.org_name);&#13;
+	getWorkspace.setStringParameter("workspace_name", workspace_name);&#13;
+&#13;
+	try {&#13;
+		workspaceResponse     = getWorkspace.execute();&#13;
+		workspaceResponseBody = workspaceResponse.haveError() ? workspaceResponse.getErrorMessage() : workspaceResponse.getBody();&#13;
+&#13;
+	} catch(ex) {&#13;
+		// On HTTP Request error&#13;
+		var errorResponseBody = ex.getMessage();&#13;
+		responseStatus        = workspaceResponse.getStatusCode();&#13;
+&#13;
+	  gs.info("Response: " + errorResponseBody);&#13;
+	  gs.info("HTTP Status: " + responseStatus);&#13;
+	} finally {&#13;
+		var parsedWorkspace = JSON.parse(workspaceResponseBody);&#13;
+    currentRunData = parsedWorkspace["data"]["relationships"]["current-run"]["data"];&#13;
+  }&#13;
+&#13;
+  return currentRunData;&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>722f750ddb813300e16e58b3ca961953</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 19:39:37</sys_created_on>
+        <sys_id>f62f750ddb813300e16e58b3ca961953</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 21:10:16</sys_updated_on>
+        <value>/*&#13;
+  Workspace Polling&#13;
+    Finds any records not in an applied state then&#13;
+    queries the Terraform Enterprise API for their status.&#13;
+*/&#13;
+&#13;
+// System Property variables for Terraform API&#13;
+var conf = new tfe_config();&#13;
+&#13;
+// Search Terraform Table for any records not in "applied" state&#13;
+var gr = new GlideRecord("x_325709_terraform_terraform");&#13;
+gr.addQuery("last_known_state", "!=", "applied");&#13;
+gr.query();&#13;
+&#13;
+// Loop through all records&#13;
+while (gr.next()) {&#13;
+	var runID;&#13;
+&#13;
+  // Fetch Workspace Current Run Info&#13;
+  var currentRun = getWorkspaceCurrentRun(gr.workspace_name);&#13;
+  if (currentRun !== null) {&#13;
+    runID = currentRun.id;&#13;
+  } else {&#13;
+    gr.last_known_state = String(currentRun);&#13;
+    gr.update();&#13;
+    continue; // move on to next record&#13;
+  }&#13;
+&#13;
+  // Fetch Run State Info and update record&#13;
+  var runState = getRunState(runID);&#13;
+  gr.last_known_state = runState.toLowerCase();&#13;
+  gr.update();&#13;
+&#13;
+} // end while loop&#13;
+&#13;
+&#13;
+// ** Functions **&#13;
+/*&#13;
+* @param {String} run_id - Run ID&#13;
+* @return {String} Current Run State String&#13;
+*/&#13;
+function getRunState(run_id) {&#13;
+	gs.info("Run id" + run_id);&#13;
+	var current_run_state;&#13;
+&#13;
+	var runResponse;&#13;
+	var runResponseBody;&#13;
+	var runHttpStatus;&#13;
+&#13;
+	getRun = new sn_ws.RESTMessageV2("TFE Runs", "Get Run");&#13;
+	getRun.setHttpTimeout(10000);&#13;
+	getRun.setStringParameter("hostname", conf.hostname);&#13;
+	getRun.setStringParameter("api_team_token", conf.api_team_token);&#13;
+	getRun.setStringParameter("run_id", run_id);&#13;
+&#13;
+	try {&#13;
+		runResponse     = getRun.execute();&#13;
+		runResponseBody = runResponse.haveError() ? runResponse.getErrorMessage() : runResponse.getBody();&#13;
+	} catch(ex) {&#13;
+		// On HTTP Request error&#13;
+		var errorMsg    = ex.getMessage();&#13;
+		runHttpStatus   = runResponse.getStatusCode();&#13;
+		var requestBody = getRun ? getRun.getRequestBody() : null;&#13;
+&#13;
+	  gs.info("Response: " + errorMsg);&#13;
+	  gs.info("HTTP Status: " + runHttpStatus);&#13;
+	} finally {&#13;
+	  var parsedRun     = JSON.parse(runResponseBody);&#13;
+    current_run_state = String(parsedRun["data"]["attributes"]["status"]);&#13;
+	}&#13;
+&#13;
+  return current_run_state;&#13;
+}&#13;
+&#13;
+&#13;
+/*&#13;
+* @param {String} workspace_name - Name of the workspace to query TFE API&#13;
+* @return {Object|null} Parsed object from JSON data or null&#13;
+*/&#13;
+function getWorkspaceCurrentRun(workspace_name) {&#13;
+	var currentRunData;&#13;
+&#13;
+	var workspaceResponse;&#13;
+	var workspaceResponseBody;&#13;
+	var responseStatus;&#13;
+&#13;
+  getWorkspace = new sn_ws.RESTMessageV2("TFE Workspaces", "Show Workspace");&#13;
+	getWorkspace.setHttpTimeout(10000);&#13;
+	getWorkspace.setStringParameter("hostname", conf.hostname);&#13;
+	getWorkspace.setStringParameter("api_team_token", conf.api_team_token);&#13;
+	getWorkspace.setStringParameter("org_name", conf.org_name);&#13;
+	getWorkspace.setStringParameter("workspace_name", workspace_name);&#13;
+&#13;
+	try {&#13;
+		workspaceResponse     = getWorkspace.execute();&#13;
+		workspaceResponseBody = workspaceResponse.haveError() ? workspaceResponse.getErrorMessage() : workspaceResponse.getBody();&#13;
+&#13;
+	} catch(ex) {&#13;
+		// On HTTP Request error&#13;
+		var errorResponseBody = ex.getMessage();&#13;
+		responseStatus        = workspaceResponse.getStatusCode();&#13;
+&#13;
+	  gs.info("Response: " + errorResponseBody);&#13;
+	  gs.info("HTTP Status: " + responseStatus);&#13;
+	} finally {&#13;
+		var parsedWorkspace = JSON.parse(workspaceResponseBody);&#13;
+    currentRunData = parsedWorkspace["data"]["relationships"]["current-run"]["data"];&#13;
+  }&#13;
+&#13;
+  return currentRunData;&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Poll Run State">722f750ddb813300e16e58b3ca961953</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 19:39:37</sys_created_on>
+        <sys_id>fa2fbd4ddb813300e16e58b3ca96197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 19:39:37</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7e2fbd4ddb813300e16e58b3ca96197f</condition>
+        <from display_value="Begin">b22fbd4ddb813300e16e58b3ca96197f</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 19:39:38</sys_created_on>
+        <sys_id>322fbd4ddb813300e16e58b3ca961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 19:39:38</sys_updated_on>
+        <to display_value="Poll Run State">722f750ddb813300e16e58b3ca961953</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">fa2fbd4ddb813300e16e58b3ca96197e</condition>
+        <from display_value="Poll Run State">722f750ddb813300e16e58b3ca961953</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 19:39:38</sys_created_on>
+        <sys_id>362fbd4ddb813300e16e58b3ca961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 19:39:38</sys_updated_on>
+        <to display_value="End">b22f750ddb813300e16e58b3ca961952</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 19:39:37</sys_created_on>
+        <sys_id>b62f750ddb813300e16e58b3ca961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 19:39:37</sys_updated_on>
+        <workflow_version display_value="Poll Run State">f22f750ddb813300e16e58b3ca961950</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=059048d5dbb03300e16e58b3ca96199b^sys_id!=f22f750ddb813300e16e58b3ca961950">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
